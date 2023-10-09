@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    margin-top: -2.5rem;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gradient 8s ease infinite;
+    background-size: 200% 200%;
+}
+
+main {
+    background-color: #fff;
+    padding: 4.8rem 6.4rem 6.4rem;
+    border-radius: 5px;
+    width: min(80%, 43rem);
+    display: flex;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 300px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+    padding: 1.6rem;
+    background: #ff9500;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ca7702;
+}
+
+img {
+    cursor: pointer;
+}
+
+#screen1 p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#screen1 img:hover {
+    animation: shake 180ms infinite;
+}
+
+#screen2 p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+    display: block;
+    padding: 1rem;
+    background: #e4edf1;
+    text-align: center;
+}
+
+#screen2 img {
+    margin: 4.2rem auto;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-0.5rem) translateY(0.2rem);
+    }
+    100% {
+        transform: translateX(0.5rem) translateY(-0.2rem);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
